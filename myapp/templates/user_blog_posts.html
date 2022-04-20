@@ -3,7 +3,7 @@
     <div class="container">
         <div class="jumbotron">
             <div align="center">
-                <h1>Welcome to the page for {{user.username}}</h1>
+                <h1>The blog posts of {{user.username}}</h1>
             </div>
         </div>
      {% for post in blog_posts.items %}
@@ -17,6 +17,7 @@
     </p>
     <br>
     <p>{{post.text}}</p>
+    <p>{{post.reading}}</p>
     <br>
     {% endfor %}
     </div>
